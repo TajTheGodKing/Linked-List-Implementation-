@@ -24,6 +24,7 @@ public:
 	LL();//constructor 
 /*Prototypes*/
 	void Add(int AddData);//adding items to the linked list
+
 	void deleteNode(int deleteData);//deletes items from linked list
 	void print();//printing linked list;
 
@@ -80,8 +81,17 @@ void LL::Add(int AddData) {
 			curr = curr -> next;
 		}
 	}
-
-
-
+}
+int main(){
+LL obj;
+	obj.Add(5);
+	obj.Add(3);
+	obj.Add(2);
 	
+	obj.print();
+	
+	obj.deleteNode(5);
+	obj.deleteNode(7);
+	obj.print(2);
+
 }
